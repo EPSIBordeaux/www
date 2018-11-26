@@ -4,4 +4,5 @@ _site
 .idea
 vendor
 .bundle
-.git-metadata.jekyll-metadata
+.git-metadata
+.jekyll-metadata
