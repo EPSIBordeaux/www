@@ -19,8 +19,6 @@ enable_comments: true
 
 > [Les sources de mon ancien site sont toujours disponibles sur Github](https://github.com/sylvainmetayer/sylvainmetayer-old), mais remontent à l'époque de mon DUT, soyez indulgents ! :grin:
 
-De plus, [le premier et unique article ]({{ site.baseurl }}{% post_url 2017-03-28-parthenay %}) présent sur ce site n'était même pas hébergé sur ce site, mais sur un sous-domaine (désormais inexistant) et avec la plateforme [Ghost](https://ghost.org/fr/) (qui est un excellent logiciel libre au passage !).
-
 Cela faisait donc deux sites à maintenir, pour un trafic plus que faible :smile: !
 
 Le choix de PHP avait été fait à l'époque car il s'agissait du seul langage que je maitrisais.
