@@ -1,0 +1,41 @@
+language: ruby
+sudo: false
+rvm:
+- 2.4.1
+cache: bundler
+install: bundle install
+script: |
+  bundle exec jekyll doctor
+  JEKYLL_ENV=production bundle exec jekyll serve --config _config.yml,_config-dev.yml &
+  SERVER_PID=$!
+  sleep 5
+  bundle exec rake ci
+  kill -9 $SERVER_PID
+  rm -rf _site/
+  JEKYLL_ENV=production bundle exec jekyll build --config _config.yml
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+before_deploy:
+- echo -e "Host $DEPLOY_HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/traviskey
+- ssh-add /tmp/traviskey
+deploy:
+- provider: script
+  skip_cleanup: true
+  script:
+  - rsync -r --quiet --delete-after _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY
+  on:
+    branch: master
+- provider: script
+  skip_cleanup: true
+  script:
+  - JEKYLL_ENV=stage bundle exec jekyll build --config _config.yml,_config-deploy-dev.yml && rsync -r --quiet
+    --delete-after _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY_DEV
+  on:
+    branch: develop
