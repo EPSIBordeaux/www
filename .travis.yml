@@ -27,7 +27,7 @@ addons:
 before_deploy:
 - echo -e "Host $DEPLOY_HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - openssl aes-256-cbc -K $encrypted_b3cd56a03ce2_key -iv $encrypted_b3cd56a03ce2_iv
-  -in github_travis_epsi.enc -out ~\/.ssh/github_travis_epsi -d
+  -in github_travis_epsi.enc -out /tmp/traviskey -d
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/traviskey
 - ssh-add /tmp/traviskey
