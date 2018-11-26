@@ -8,7 +8,7 @@ services:
     container_name: jekyll_epsi_bordeaux
     image: jekyll/jekyll:3.8.5
     labels:
-      jekyll_docker_sylvainmetayer: true
+      jekyll_docker_epsi_bordeaux: true
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4000"]
       interval: 30s

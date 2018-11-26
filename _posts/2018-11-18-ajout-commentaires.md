@@ -6,7 +6,7 @@ tag:
 - isso
 - commentaires
 category: blog
-author: sylvainmetayer
+author: romaindurade
 description: "Les commentaires sont maintenant disponible sur le site"
 hidden: false
 star: true
