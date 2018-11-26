@@ -1,8 +1,8 @@
-# Personal Website
+# www
 
-[![Build Status](https://travis-ci.org/sylvainmetayer/sylvainmetayer.svg?branch=master)](https://travis-ci.org/sylvainmetayer/sylvainmetayer)
+[![Build Status](https://travis-ci.org/EPSIBordeaux/www.svg?branch=master)](https://travis-ci.org/EPSIBordeaux/www)
 
-> Sylvain METAYER
+> EPSI Bordeaux
 >
 > Based on a modified version of [indigo theme](https://github.com/sergiokopplin/indigo)
 
