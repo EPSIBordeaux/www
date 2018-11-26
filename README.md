@@ -60,7 +60,7 @@ If you want to use travis, you will have to generate the following variables wit
 
     This tells travis where your SSH server is located (can be an IP or a domain)
 
-- `travis encrypt DEPLOY_DIRECTORY_DEV=/var/www/dev.sylvainmetayer.fr --add`
+- `travis encrypt DEPLOY_DIRECTORY_DEV=SOME_DEV_REMOTE_PATH --add`
 
     This tells travis where to deploy your development application on the remote host.
 
