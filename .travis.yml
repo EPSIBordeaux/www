@@ -16,12 +16,18 @@ script: |
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: GZ4JwJA0OeSU8KgLFciebBM6HzhekfKe6iNKyQsSxJoWiTCkAtGEMXF1y4n/ol948JyUubKwvx3oakhyc0+a5yTTnfFAONOFZj2siAxdeFTrV/dcGdUCKX3JUnh2ULSFnIzHRpPOoDoWWP1enPfU5EzfspQHHkQ5YHMxPO3Ub7LvhpNA/GuEpf0y++2GBPS/I7oVdJNskdsAB6eKjt02Bo/Ehb4eYqQf6dTJyujocxXrOhaW8qV3rldmF80qTDVq6oRWDkKl6TVse7FiBxgjgw1IEw8eDl6tRnQ/NlG8oQfSCbnKf+HzNLV0QRrKmW3rMzPUlUMoSwERqpJH92OdNwG50RUaZeSlwn/w7KGgD5ugEFXeVGyEAYZMIyi5EcImmfA10mpdd9MqlsHBoTINnm5q5mWnx1d1JblrsxWg0CsLxXS2+nuYZ04MZxV45iws3ds7un+5hRbmghfZVF/NsuBm0NztPyuXldJHyXL2Sv9MlUrTQMQ33bEKMpmhRgihoonEcyYuVqqgTf3kSfCsqpCBbZ8PLXCIi47nnwrbYuofu1hPI8riABXNysjrz4X2KPrfimEzxoPEiXje0ibBZ2ldFRCHi8risA9DTTgmqbDwZbbE7MWY96QM6lgT7Mzkbn9pjZclUZF2QdrJE1ABJftq0ahWK6d3vwF28ldl61U=
+  - secure: LSJD5eCpdkB/l9ut9kJ5hWcaV+giogGwcAQKf63UXaCCJ/+teNuum/1oY+s0iRhxa7av3uIZjfrAneGTej1r+n4OOgxY8LxVkYnLEx9myr2murjs7FCSQyTGkYroxvKkekDKm5/xAR0YYDaUgSruxKrYEIVw0FKkfFva/irCVdjeENdgbyr4hgVyw+8kX2Fg1CqkJLAzJoE8OHtS81TIkPWZ3TYokRNfd7aQjMdvqeCwmmiMff0ShvXmtcZNiBIV4QdDsDem06gCuZLPUJc7Inbjkd+XnI09dgUvmF5VUhPzaMSZuNcCjMbj1LQnCyXo7/N+q+4QToP9O8F1OMDz1CvmB+S3uIH3IQcfH3CXbodCF6pA+AZunH33BX3oNTLoEXq5sgqA5UCFf5E0CB9P8ccwEb3PsJDmcV+I6o6iOTr1+rmsnAFI1jhHRW7X7P5rtoPgHQ3KQdQ/3Av+e/HCvKlOnNhITA2MtXdXwAQrs5XPv+nmZiOut5rNhNTJswesj/MRnMyf1rr0qINFUzokpQGt6HNkUDibKV7GVAUNvR2fzqhYTHOzPSN6ChnADmRywoYShIxm2d0tptIZ6kQRLOsAF5L8cjyYliDn6zEa098rolbUgffjEdD8fXq+QYx2d1POJBpsmS/mNlxIgTTs3IHUUjaymf88MsCLCa2SQlU=
+  - secure: lFL5jyDeJHEkemzXRKazYy6GT9Lc5gEJC5TUFEcVkGF78y/v5laMROnUAKK+u2CmUm5A/NRR3GLe/Br+KU1vXUowJwj3czqWfT9HjCO6TFSIgbUA3XTbIBHtVb/Vz+lOyLzdJ591TcfvzwdtCvF0id/mZITRuQS5uGj/LrFp2M7igFJZynuhGQfvTbW0TBrEOg2VNfIO2s19IhDlmZKsPKSlK0a2CEkPtObF8jFPYjOJxJOPtl1fHpL16tZKxInQZs0aooCia8jhCNEJC7hOyMpWPdu8QvAo6XmLa99PSyarUnr/9CCRudZjiymnPSiatTe3bsjyjH5qI/4kFbTBkZXgmotTxNwwa1WPfswv8PNTnx6zJovCB4nPXtUbMb9TyifpMNW089ioe2W1/R9PSEUw7g3IqOuj1tAwG2KbIn64QYMQe8H7SEe6w/JQ5b2UFlZJtwKpgXjJYJfzztPYn644G/1f5glCMyx/eC2NJCWdvGRlnXeobhn8r5kWvmY5ip0Y7n9bOa+lRZOwzL9YtpPfT74N6TBOd8Vv+hEzzKx6jPXOXCWWdX15E1btz8L9vZ2tdME1VlZkwRlFH1Ybf+QCttbNOrDYYMaQy9sq18nvHgKdJG83D9UfhvJqGAakxxn8WTSpYq9vVYVn+ooJCSWIjZTlRKkkrS6uXJACnvE=
+  - secure: MQlRH89i7aiMBAiv1zg0TQI2KZ47onVaX/PI2EnuR8qWk8NsZNS10qgdwEVlO9WP27n4+Y31M0wKCyxzdJvFgqu6QzBLTc/Ugb5B3078ZhEUjnoDG78B/8PJzHbpSP49gihEriY0Qqvu+D94WgA7WVZz0onX+Z62Al5eAHzXMkiNGTMJVnVDWoSoXEJYpTorusrXw+wMJmdzk/FEUjtZZoDdHKA78Ucjm3ClSrzscZcnrYxzsc3jiXi3jFvGvtzZwVe2s/g4MXL6n7NFMQvkbRNMa9TJnXR+GTsPIvIbT4bfcIsOAOGhgMdMXnGNWWaWyG2PIxjabGilUnHR33leFVx2i2SgjPsvOmgHCCerXGlBOpGyaFkVkhbodaq6lJQDwTBKYD3obPnvul8RTr95+34zW4iAvCK465nnO9tNEHuJPOSUZGtJxDs8ehVKzp850Y8vpm+KKG0kf1yr4WHLQapFfo8ZnwCl4VQvBDmALQdCxikPsWH8Igc23BWt+GE/GguArCBlCl2Y1cQIgJ3eTNU3Gkx0o70XyB+Fz1ciRYtkurBKpRkh10HuAqIaeTcgkMaGEP03gGnroUleOXYqXW4ZlblmmylTovx/aEb69v+J51HJFcz6iDWVqxCBWw9MBeproANGMoO0z4U411d9s0r3QIZzQj1NZS/PmYOEaTQ=
 addons:
   apt:
     packages:
     - libcurl4-openssl-dev
 before_deploy:
 - echo -e "Host $DEPLOY_HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- openssl aes-256-cbc -K $encrypted_b3cd56a03ce2_key -iv $encrypted_b3cd56a03ce2_iv
+  -in github_travis_epsi.enc -out ~\/.ssh/github_travis_epsi -d
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/traviskey
 - ssh-add /tmp/traviskey
@@ -35,7 +41,7 @@ deploy:
 - provider: script
   skip_cleanup: true
   script:
-  - JEKYLL_ENV=stage bundle exec jekyll build --config _config.yml,_config-deploy-dev.yml && rsync -r --quiet
-    --delete-after _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY_DEV
+  - JEKYLL_ENV=stage bundle exec jekyll build --config _config.yml,_config-deploy-dev.yml
+    && rsync -r --quiet --delete-after _site/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY_DEV
   on:
     branch: develop
